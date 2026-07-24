@@ -1,0 +1,337 @@
+.edit-score_max {
+    display: none;
+}
+
+.score-list li {
+    margin: 0.2rem 0;
+}
+
+/* LIST HEADER SECTION */
+
+.score-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* PLAYER SECTION */
+
+.new_player-tpl-container {
+    width: 100%;
+}
+
+.player-row {
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.scores_list-header .scores_title-player,
+.player-name {
+    width: 35%;
+    overflow: hidden;
+}
+
+.player-name span {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+.points-actions button,
+.player-remove button {
+    justify-content: center;
+}
+
+.scores_list-header .scores_title-scores,
+.player-score {
+    width: 20%;
+    text-align: center;
+}
+
+.scores_list-header .scores_title-actions,
+.points-actions {
+    width: 30%;
+}
+
+.scores_list-header .scores_title-remove,
+.points-remove {
+    width: 15%;
+}
+
+.player-score {
+    font-size: 1.8rem;
+}
+
+.points-actions {
+    display: flex;
+}
+
+/* ADD SECTION */
+
+.player-add-container {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-shadow: var(--text-shadow3);
+    color: rgb(175, 21, 21);
+    border-radius: 200%;
+    transition: all 0.2s ease-in-out;
+    margin-top: 1rem;
+}
+
+.player-add-container:hover {
+    text-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    color: var(--main-bg-color2);
+    font-size: 1.6rem;
+    cursor: pointer;
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+
+.player-add-container:hover div {
+    border: solid 2px var(--main-bg-color2);
+    text-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1), 0 0 50px rgba(0, 0, 0, 0) inset;
+}
+
+/* NEW PLAYER FORM */
+
+.new_player-form {
+    display: none;
+    z-index: 98;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.new_player-form-background {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+}
+
+.new_player-form label {
+    position: fixed;
+    top: 6rem;
+    left: 2.5%;
+    width: 90%;
+    padding: 2rem 0;
+    border-radius: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.new_player-form-inputs {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: rgb(236, 232, 222) !important;
+}
+
+.max_score-button,
+.submit-player_name {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    color: var(--main-font-color);
+    font-size: 1.7rem;
+    font-weight: bold;
+    background-color: var(--main-bg-color);
+    border: solid 2px var(--main-font-color);
+    border-radius: 1rem;
+}
+
+.max_score-button {
+    margin: 0 auto;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.page-title {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.player-name {
+    font-size: 1.2rem;
+}
+
+.player-score {
+    font-size: 1.2rem;
+}
+
+.player-add {
+    padding-top: 1rem;
+}
+
+.points-add,
+.points-remove,
+.player-remove-button {
+    position: relative;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid 2px black;
+    margin-left: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.points-add:hover,
+.points-remove:hover,
+.player-remove-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.points-add,
+.points-remove,
+.player-remove-button {
+    height: 1.8rem;
+    width: 1.8rem;
+    min-width: 1.8rem;
+}
+
+.points-add h2,
+.points-remove h2,
+.player-remove-button h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2rem;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.points-add h2,
+.points-remove h2,
+.player-remove-button h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.player-add-container span {
+    font-size: 1.2rem;
+}
+
+.player-add-container div {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px rgb(109, 1, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8), 0 0 2px rgba(0, 0, 0, 0.8) inset;
+    font-size: 2.8rem;
+}
+
+.player-add-container div {
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+}
+
+#endgame_message-container {
+    display: none;
+    width: 100%;
+    background-image: url(../img/background_paper.jpg);
+    background-size: cover;
+    border: solid 3px var(--main-font-color);
+    border-radius: 2rem;
+    font-size: 3rem;
+    text-shadow: 0 0 4px black;
+    box-shadow: inset 0 0 10px black;
+    padding: 3rem 1rem;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+#endgame_message-container {
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: 1rem 0.5rem;
+    width: 90%;
+    text-align: center;
+}
+
+#endgame_message-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 1rem 0.5rem;
+    color: var(--gold-color2);
+    text-shadow: var(--text-shadow3);
+}
+
+.player-add-container:active {
+    text-shadow: 0 0 500px rgba(0, 0, 0, 1);
+    color: var(--main-bg-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.player-add-container:active div {
+    border: solid 3px var(--main-bg-color);
+    box-shadow: 0 0 100px var(--main-bg-color), 0 0 10px rgba(0, 0, 0, 0.3) inset;
+}
+
+.player-add-container span:active {
+    font-size: 1.6rem;
+}
+
+#endgame_message-container span {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+}
+
+#endgame_message-container #winner {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem 0;
+    text-align: center;
+    color: var(--gold-color2);
+    text-shadow: var(--text-shadow3);
+}
+
+.points-add:active,
+.points-remove:active,
+.player-remove-button:active {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+
+
+
+
+
+.score-header hr,
+.player-row {
+    padding-bottom: 0.2rem;
+    margin: 0;
+}

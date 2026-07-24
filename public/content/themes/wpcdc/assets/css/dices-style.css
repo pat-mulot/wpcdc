@@ -1,0 +1,158 @@
+/* ------ASPECT DES DES------ */
+
+.dice {
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: rgb(236, 236, 236);
+    border: solid 2px rgb(65, 65, 65);
+    border-radius: 0.7em;
+    box-shadow: 0px 0px 20px black, inset 0px 0px 10px rgb(53, 53, 53);
+    position: relative;
+}
+
+#dice3 {
+    background-color: lightgreen;
+}
+
+.fig_mid {
+    top: calc(50% - 0.4rem);
+    left: calc(50% - 0.4rem);
+}
+
+.fig_top_left {
+    top: 0.3rem;
+    left: 0.3rem;
+}
+
+.fig_top_right {
+    top: 0.3rem;
+    right: 0.3rem;
+}
+
+.fig_mid_left {
+    top: calc(50% - 0.4rem);
+    left: 0.3rem;
+}
+
+.fig_mid_right {
+    top: calc(50% - 0.4rem);
+    right: 0.3rem;
+}
+
+.fig_bot_left {
+    bottom: 0.3rem;
+    left: 0.3rem;
+}
+
+.fig_bot_right {
+    bottom: 0.3rem;
+    right: 0.3rem;
+}
+
+.dot {
+    position: absolute;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 2px black;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+/* --------------------- USER DICES POS --------------------- */
+
+.dice_container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    transition: all 0.3s ease-in-out;
+    margin: auto;
+}
+
+.dice {
+    transform: scale(0.9);
+    transition: transform 0.2s ease-in;
+}
+
+.dice.active {
+    transform: scale(1.2);
+}
+
+.dice_container2 {
+    transform: translateX(-2rem);
+}
+
+.dice_container3 {
+    transform: translateX(-4rem);
+}
+
+.dice_container1.rollAnim1 {
+    transition: all 0.9s;
+}
+
+.dice_container2.rollAnim2 {
+    transition: all 0.6s;
+}
+
+.dice_container3.rollAnim3 {
+    transition: all 0.7s;
+}
+
+
+.dice_container1.rollAnim1 #dice1.active, .dice_container1-other.rollAnim1-other #dice1.active {
+    transform: scale(0.9) rotate(-175deg);
+    transition: transform 0.7s;
+}
+
+.dice_container2.rollAnim2 #dice2.active, .dice_container2-other.rollAnim2-other #dice2.active {
+    transform: scale(0.9) rotate(-155deg);
+    transition: transform 0.4s;
+}
+
+.dice_container3.rollAnim3 #dice3.active, .dice_container3-other.rollAnim3-other #dice3.active {
+    transform: scale(0.9) rotate(-135deg);
+    transition: transform 0.6s;
+}
+
+/* --------------------- OTHER PLAYER DICES POS --------------------- */
+
+.dice_container-other {
+    top: 0;
+    right: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.dice_container2-other {
+    transform: translateX(2rem);
+}
+
+.dice_container3-other {
+    transform: translateX(4rem);
+}
+
+.dice_container1-other.rollAnim1-other {
+    transition: all 0.9s;
+}
+
+.dice_container2-other.rollAnim2-other {
+    transition: all 0.6s;
+}
+
+.dice_container3-other.rollAnim3-other {
+    transition: all 0.7s;
+}

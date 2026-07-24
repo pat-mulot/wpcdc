@@ -1,0 +1,160 @@
+<?php
+add_action('wp_enqueue_scripts', function () {
+    // ------------------------------------------------------------- //
+    // --------------------- LOAD STYLE css : --------------------- //
+    wp_enqueue_style(
+        'reset-css',
+        get_theme_file_uri('assets/css/reset.css')
+    );
+    wp_enqueue_style(
+        'header-css',
+        get_theme_file_uri('assets/css/header.css')
+    );
+    wp_enqueue_style(
+        'main-css',
+        get_theme_file_uri('assets/css/style.css')
+    );
+    wp_enqueue_style(
+        'dices-css',
+        get_theme_file_uri('assets/css/dices-style.css')
+    );
+    wp_enqueue_style(
+        'carousel-css',
+        get_theme_file_uri('assets/css/carousel.css')
+    );
+    wp_enqueue_style(
+        'scores-sheet-css',
+        get_theme_file_uri('assets/css/scores-sheet.css')
+    );
+    wp_enqueue_style(
+        'game-css',
+        get_theme_file_uri('assets/css/game.css')
+    );
+    wp_enqueue_style(
+        'grelotte-css',
+        get_theme_file_uri('assets/css/rules/grelotte.css')
+    );
+    // ------------------------------------------------------ //
+    // --------------------- LOAD js : --------------------- //
+    wp_enqueue_script(
+        'main-js',
+        get_theme_file_uri('assets/js/app.js'),
+        [],
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'burger-js',
+        get_theme_file_uri('assets/js/components/burger.js'),
+        [],
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'carousel-js',
+        get_theme_file_uri('assets/js/components/carousel.js'),
+        [],
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'scoresSheet-js',
+        get_theme_file_uri('assets/js/components/scoresSheet.js'),
+        [],
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'profile-js',
+        get_theme_file_uri('assets/js/components/profile.js'),
+        [],
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'dropdown-js',
+        get_theme_file_uri('assets/js/components/dropdown.js'),
+        [],
+        false,
+        true
+    );
+    // --------------------------------------------------------------- //
+    // --------------------- LOAD SERVICES js : --------------------- //
+    wp_enqueue_script(
+        'userService-js',
+        get_theme_file_uri('assets/js/services/userService.js'),
+        [],
+        false,
+        true
+    );
+    // --------------------------------------------------------------- //
+    // --------------------- LOAD PLUGINS js : --------------------- //
+    wp_enqueue_script(
+        'storage-js',
+        get_theme_file_uri('assets/js/plugins/storage.js'),
+        [],
+        false,
+        true
+    );
+    // ----------------------------------------------------------- //
+    // --------------------- LOAD GAME js : --------------------- //
+    wp_enqueue_script(
+        'gameApp-js',
+        get_theme_file_uri('assets/js/components/gameApp.js'),
+        [],
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'dices-js',
+        get_theme_file_uri('assets/js/components/game/dices.js'),
+        [],
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'figures-js',
+        get_theme_file_uri('assets/js/components/game/figures.js'),
+        [],
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'scores-js',
+        get_theme_file_uri('assets/js/components/game/scores.js'),
+        [],
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'iaPlayer-js',
+        get_theme_file_uri('assets/js/components/game/iaPlayer.js'),
+        [],
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'rules-js',
+        get_theme_file_uri('assets/js/components/game/rules.js'),
+        [],
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'grelotte-js',
+        get_theme_file_uri('assets/js/components/game/rules/grelotte.js'),
+        [],
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'bevue-js',
+        get_theme_file_uri('assets/js/components/game/rules/bevue.js'),
+        [],
+        false,
+        true
+    );
+    wp_localize_script('userService-js', 'wpcdcConfig', [
+        'baseURI' => home_url('/index.php'),
+    ]);
+});

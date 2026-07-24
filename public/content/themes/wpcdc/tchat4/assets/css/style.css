@@ -1,0 +1,208 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 100vh;
+    background-color: black;
+    color: silver;
+    font-size: 12px;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.user_name-form-container {
+    padding: 1rem;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    text-align: right;
+    background-color: black;
+}
+
+#user_name-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.user_name-form-container>form>input {
+    display: flex;
+    flex-grow: 1;
+    height: 2rem;
+    margin: 0;
+    padding: 8px;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: silver;
+}
+
+.user_name-form-container>form>button {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.user_name-form-container>form>button div {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.user_name-form-container>form>button .icon-sm {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.user_name-form-container #user_name {
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+}
+
+.msg_list-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 0.5rem;
+}
+
+.msg_list {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1rem;
+}
+
+.msg_list li {
+    margin-left: 0.5rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+}
+
+.sender-container {
+    width: 100%;
+    max-width: 70%;
+    color: rgb(117, 117, 117);
+    display: flex;
+}
+
+.msg_list li .sender {
+    display: flex;
+    padding-bottom: 0.25rem;
+    margin-right: 0.5rem;
+    overflow: hidden;
+}
+
+.msg_list li p {
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem;
+    word-break: break-all;
+}
+
+.msg_list li.self {
+    margin-right: 0.5rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.msg_list li.same {
+    margin-top: 0.1rem;
+}
+
+.msg_list li.same .sender-container {
+    display: none;
+}
+
+.msg_list li.self p {
+    background-color: rgba(119, 194, 84, 0.2);
+}
+
+.msg-form-container {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    border-top: solid 1px rgb(27, 27, 27);
+}
+
+#msg-form {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.msg-form-container textarea {
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    word-break: break-all;
+    padding: 8px;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: silver;
+    display: flex;
+    flex-grow: 1;
+    height: 1.5rem;
+}
+
+.msg-form-container button {
+    width: 1.5rem;
+    height: 2rem;
+    margin: 0 1rem;
+    background-color: transparent;
+    border: none;
+
+}
+
+.msg-form-container button .icon-sm {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.users_list-container {
+    border-bottom: solid 1px rgb(27, 27, 27);
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+}
+
+.users_list-container span {
+    padding: 0.25rem 0;
+    display: flex;
+}
+
+.users_list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+}
+
+.users_list li {
+    border: solid 1px rgb(58, 58, 58);
+    border-radius: 8px;
+    padding: 4px 4px;
+    margin: 0 2px;
+}
+
+.icon-sm {
+    height: 1rem;
+    width: 1rem;
+}

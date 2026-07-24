@@ -1,0 +1,13 @@
+{
+    "autoload": {
+        "psr-4": {
+            "wpcdc\\": "./class"
+        }
+    },
+    "config": {
+        "vendor-dir": "vendor-wpcdc"
+    },
+    "require": {
+        "altorouter/altorouter": "^2.0"
+    }
+}

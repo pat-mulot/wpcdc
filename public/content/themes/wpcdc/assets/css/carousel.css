@@ -1,0 +1,133 @@
+/* ---------------- SLIDER 1 ---------------- */
+
+.inner_slider .inner_slider-content {
+    max-width: 100%;
+    display: none;
+}
+
+.inner_slider .inner_slider-content.active {
+    display: flex;
+    animation: fade 0.9s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.inner_slider-buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner_slider-button {
+    margin: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.inner_slider-button:hover {
+    transform: scale(1.1) rotate(-15deg);
+}
+
+/* ---------------- CAROUSEL 1 ---------------- */
+
+.slider-container {
+    --slide-max-height: 30vh;
+    --slide-min-height: 20vh;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.slider {
+    --border-size: 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    border: solid var(--border-size) var(--border-color2);
+    box-sizing: border-box;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.slide {
+    --border-size: 3px;
+    flex-shrink: 0;
+    width: calc(100% + (var(--border-size) * 2));
+
+}
+
+.slide-img-container {
+    --border-size: 3px;
+    --margin-size: 1rem;
+    width: calc(100% - (var(--border-size) * 2) - (var(--margin-size) * 2));
+    border: solid var(--border-size) var(--border-color2);
+    border-radius: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: var(--margin-size);
+    margin-bottom: 0;
+}
+
+.slider img {
+    --border-size: 3px;
+    --margin-size: 1rem;
+    width: calc(100% - (var(--margin-size) * 2));
+    height: auto;
+    max-height: var(--slide-max-height);
+    min-height: var(--slide-min-height);
+    object-fit: cover;
+    border: solid var(--border-size) var(--border-color2);
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    margin: var(--margin-size);
+}
+
+.slider-buttons-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0 0.6rem;
+    padding-top: 1rem;
+}
+
+.slider-button {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    transition: all 0.6s;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 5px rgba(0, 0, 0, 0.3) inset;
+}
+
+.slider-button.active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 5px var(--border-color2) inset;
+    background-color: var(--main-font-color);
+}
+
+.slide-content {
+    margin: 1rem;
+    padding-left: 1rem;
+}
+
+.slide-content h3 {
+    padding-top: 1rem;
+}
