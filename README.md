@@ -1,10 +1,10 @@
 # Cul de Chouette
 Application complète autour du jeu de dés *Cul de Chouette* (règles communautaires popularisées par la série *Kaamelott*) : accueil et articles administrables, page des règles, comptes joueurs, classement (façon borne d'arcade) avec statistiques par joueur connecté, et le jeu lui-même, avec lancers en deux temps, détection automatique des figures, mode entraînement ou adversaires scriptés.
 Les règles du jeu proviennent du [**wiki**](http://plus.wikimonde.com/wiki/Cul_de_chouette).
-
-🎲 [**Jouer en ligne**](https://pat-mulot.com/games/wpcdc/public/game/)  
-🎲 [**Accès à la feuille de score**](https://pat-mulot.com/games/wpcdc/public/feuille-de-score)  
-🎲 [**Accès à l'app**](https://pat-mulot.com/games/wpcdc/public/)  
+- 🎮 [**Jouer en ligne**](https://pat-mulot.com/games/wpcdc/public/game/)  
+- 🎞️ [**Vidéo de démo**](https://www.youtube.com/watch?v=YL4Xv0PTakg)
+- 📋 [**Accès à la feuille de score**](https://pat-mulot.com/games/wpcdc/public/feuille-de-score)  
+- 🎲 [**Application live**](https://pat-mulot.com/games/wpcdc/public/)
 
 *Premier projet "jour 2" en sortie de formation, ma première application fullstack (frontend + backend, contenu administrable), après plusieurs jeux front qui m'avaient surtout servi à apprendre le JS/l'algo.*
 
